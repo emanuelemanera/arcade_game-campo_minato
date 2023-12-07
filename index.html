@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ARCADE GAME: Campo Minato</title>
+    <!-- Style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Exo:wght@600&family=Press+Start+2P&family=Silkscreen&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Page title -->
+    <div class="d-flex justify-content-center">
+        <h1 class="title">ARCADE GAME</h1>
+    </div>
+    <!-- Game area -->
+    <div class="d-flex justify-content-center">
+        <!-- Pannello informazioni di gioco -->
+        <div class="game-container">
+            <h2 class="game-title">Campo Minato</h1>
+                <hr>
+                <!-- Pannello informazioni di gioco -->
+                <div class="game-panel">
+                    <!-- Punteggio -->
+                    <div class="score">
+                        <div class="score-label">SCORE</div>
+                        <div class="score-counter">00000</div>
+                    </div>
+                </div>
+                <!-- Tabellone di gioco -->
+                <div class="game-board">
+                    <div class="grid"></div>
+                    <!-- Schermata di fine gioco -->
+                    <div class="end-game-screen hidden">
+                        <h2 class="end-game-text">Game<br>Over</h2>
+                        <button class="play-again">Gioca ancora</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="info">
+        <footer class="footer-color text-center text-white">
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © 2023 Emanuele Manera
+                <!-- Linkedin -->
+                <a class="p-3" href="https://www.linkedin.com/in/emanuelemanera/" target="_blank">
+                    <img alt="Profilo Linkedin di Emanuele Manera" src="/icons/linkedin.png" width="20" height="20">
+                </a>
+                <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons" display: none visibility:
+                    hidden>Linkedin icons created by riajulislam - Flaticon</a>
+            </div>
+        </footer>
+    </div>
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="text/Javascript" src="assets/script.js"></script>
+</body>
+
+</html>

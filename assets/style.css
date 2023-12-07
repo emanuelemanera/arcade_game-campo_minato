@@ -1,0 +1,198 @@
+/* COLOR PALETTE 
+    game-title, score, game-board Kuroi Black – Hex: #101820
+    title Hex: #ec3132
+    cell-dark Hex: #e1e1e2
+    cell:hover, cell-clicked Hex: #aaaaaa
+    cell-bomb Hex: #f1754e
+    end-game-screen Hex: #f1754e99
+    win Hex: #4ef1bb99
+    footer-color Hex: #09a058
+*/
+/* FONT 
+https://fonts.google.com/
+    Silkscreen
+    Exo
+    Darker Grotesque
+    Press Start 2P
+*/
+/* Page title */
+.title {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #ec3132;
+    font-family: 'Exo', sans-serif;
+    font-size: 76px;
+}
+
+/* Game area */
+.game-title {
+    color: #101820;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 44px;
+    text-align: center;
+}
+
+.game-container {
+    width: 484px;
+}
+
+.score {
+    color: #101820;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-board {
+    position: relative;
+    border: 2px solid #101820;
+}
+
+.grid {
+    height: 480px;
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.cell {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.cell-dark {
+    background-color: #e1e1e2;
+}
+
+.cell:hover,
+.cell-clicked {
+    background-color: #aaaaaa;
+}
+
+.cell-bomb {
+    background-color: #f1754e;
+    background-image: url('/images/bomb.png');
+    background-size: contain;
+}
+
+.cell-clicked,
+.cell-bomb {
+    cursor: not-allowed;
+}
+
+.end-game-screen {
+    background-color: #f1754e99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.win {
+    background-color: #4ef1bb99;
+}
+
+.end-game-text {
+    font-size: 48px;
+    line-height: 1.2;
+    font-family: 'Press Start 2P';
+    margin-bottom: 16px;
+}
+
+button {
+    border: 2px solid #101820;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 4px 20px 8px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e1e1e2;
+}
+
+.hidden {
+    display: none;
+}
+
+.size {
+    padding: 5px;
+
+}
+
+.info {
+    padding-top: 150px;
+}
+
+.footer-color {
+    background-color: #09a058;
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: #ec3132;
+        font-family: 'Exo', sans-serif;
+        font-size: 46px;
+    }
+
+    .game-container {
+        width: 304px;
+    }
+
+    .game-title {
+        color: #101820;
+        font-family: 'Silkscreen', sans-serif;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .score {
+        color: #101820;
+        font-family: 'Silkscreen', sans-serif;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .grid {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .cell {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .end-game-text {
+        font-size: 30px;
+        line-height: 1.2;
+        font-family: 'Press Start 2P';
+        margin-bottom: 16px;
+    }
+
+    button {
+        border: 2px solid #101820;
+        font-family: 'Darker Grotesque', sans-serif;
+        font-size: 13px;
+        text-transform: uppercase;
+        padding: 4px 20px 8px 20px;
+        cursor: pointer;
+    }
+}
